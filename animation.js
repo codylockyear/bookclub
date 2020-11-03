@@ -1,10 +1,20 @@
-const navSlide = () => {
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
-    const navLinks = document.querySelectorAll('navlinks li');
-    /*toggle nav*/
-    burger.addEventListener('click',()=>{
-        nav.classList.toggle('nav-active');
-    });
+// interactive hamburger menu 
+var navbar = document.querySelector(".navbar")
+var ham = document.querySelector(".hamburger")
+
+ham.addEventListener("click", toggleHamburger)
+
+function toggleHamburger(){
+    navbar.classList.toggle("showNav")
+    ham.classList.toggle("showClose")
 }
-navSlide();
+
+var menuLinks = document.querySelectorAll(".menuLink")
+
+menuLinks.forEach( 
+    function(menuLink) { 
+      menuLink.addEventListener("click", toggleHamburger) 
+    }
+  )
+  
+    
