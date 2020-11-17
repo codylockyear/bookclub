@@ -84,7 +84,6 @@ p {
     align-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-top: 10px;
     border: none;
 }
  /* Body and content */
@@ -131,7 +130,7 @@ footer{
     text-align: center;
 }
 .box .fcontent{
-    margin: 20px 0 0 0;
+    
     text-align: center;
 }
 .fcontent p{
@@ -154,9 +153,13 @@ padding-top: 2px;
 }
 /* media mobile view  */
 @media screen and (max-width: 815px) {
-    img {
-        width: 130px;
-        height: 240px;
+    .book1 {
+        width: 32%;
+        height: auto;
+    }
+    .author{
+        width: 100%;
+        height: auto;
     }    
 .nav-ul {
     display: none;
@@ -217,6 +220,50 @@ padding-top: 2px;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2rem;
+}
+/* footer */
+footer{
+    position: static;
+    bottom: 0px;
+    width: 100%;
+    background: #111;
+    color: white;
+}
+.mainfooter {
+    display: flex;
+    flex-direction: column;
+}
+.mainfooter .box {
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+.box h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+.box .fcontent{
+    
+    text-align: center;
+}
+.fcontent p{
+    color: white;
+}
+.left .fcontent p{
+    text-align: center;
+}
+.fbutton {
+    color:white; 
+ 
+background-color: transparent; 
+ 
+border: 2px solid white; 
+ 
+border-radius: 5px; 
+ 
+text-transform: uppercase; 
+padding-top: 2px;
 }
    
 }
